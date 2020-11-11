@@ -2,7 +2,7 @@
 
 ## Explicação
 
-* No metodo *insertionSort* da classe App, para fazer a ordenação por inserção eu
+* No metodo *insertionSort* da classe InsertionSort, para fazer a ordenação por inserção eu
 usei um laço *for* para iterar no array de numeros.
 
 * Criei uma variável *current* do tipo inteiro que vai armazenar o valor do indice
@@ -29,3 +29,21 @@ codigo algumas vezes descobri que para exibir um array de Strings no Java é pre
 usar um metodo chamado *Array.asList()* e quando for de algum outro tipo, como inteiro
 por exemplo, o metodo usado é o *Array.toString()*. Sem esses metodos, os arrays sempre
 vão ser exibidos no console com um hashCode como: [I@e73f9ac.
+
+
+# MergeSort
+
+## Explicação
+
+* No método *mergeSort()* eu usei a recursividade para repartir a lista ao
+meio, até que seu tamanho seja igual a 1 e criando duas novas listas, a lista da 
+esquerda leftList e a lista da direita rightList que receberão os valores da divisão
+da lista de entrada.
+
+Ex.: lista de entrada = [2,4,5,7,1,2,3,6], lista dividida = [2,4,5,7], [1,2,3,6] e
+assim por diante.
+Por fim, chamando método *merge()* que realizará a intercalação(merge) das lista
+que foram repartidas.
+
+* Separei o laço *for* e a criação das sub-listas em métodos diferentes com o 
+objetivo de deixar o método *mergeSort()* o mais limpo possível.
